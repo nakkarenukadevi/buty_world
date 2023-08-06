@@ -1,0 +1,63 @@
+.header{
+  background-color: #d63384;
+  font-size: 20px;
+  font-weight: 700;
+  position: fixed;
+  z-index: 2;
+}
+li{
+  display: block;
+  color:aliceblue;
+}
+li:hover{
+  background-color: green;
+  border-radius: 5px;
+}
+.product_list{
+  display: inline-table;
+align-items: center;
+position: relative;
+top:100px;
+
+}
+
+.card-body{
+  height:200px;
+  overflow-y:scroll;
+
+  text-align: center;
+ 
+}
+.card{
+  width:100px;
+  height: 200px;
+  margin:10px;
+
+}
+.card-img-top{
+  width:50px;
+  height: 200px;
+
+}
+.about{
+  position: relative;
+  
+}
+.heading{
+
+  position:absolute;
+  top:100px;
+  text-align: center;
+
+}
+.featured:hover{
+ 
+border: 5px solid green;
+ 
+}
+.featured{
+  width:250px;
+}
+.featured-div{
+  background-color: #abdbe3;
+}
