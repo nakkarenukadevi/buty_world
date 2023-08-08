@@ -1,17 +1,15 @@
-import Product from "../Product";
 import About from "./About";
 import "./App.css";
 import Header from "./Header";
-import Hoc from "./Hoc";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <About />
-      {/* <Product /> */}
+      <Outlet />
     </>
   );
 }
 
-export default Hoc(App);
+export default App;

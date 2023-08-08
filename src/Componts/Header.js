@@ -1,47 +1,38 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
       <div className=" container-fluid header">
         <div className="container">
           <div className="row">
-            <nav className="navbar navbar-expand-lg ">
-              <div className="container-fluid d-flex justify-content-end ">
-                <button
-                  className="navbar-toggler "
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-                <div
-                  className="collapse navbar-collapse "
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav me-auto mb-2  mb-lg-0 ">
-                    <li className="nav-link text-white">Home</li>
-                    <li className="nav-link  text-white">About</li>
-
-                    <li className="nav-link  text-white">Product</li>
-                  </ul>
-                  <form className="d-flex" role="search">
-                    <input
-                      className="form-control me-2"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <button className="btn btn-primary" type="submit">
-                      Search
-                    </button>
-                  </form>
+            <div className="col-lg-6 col-sm-6">
+              {/* <form role="search">
+                <div className="d-flex justify-content-center">
+                  <input
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button className="btn btn-primary" type="submit">
+                    Search
+                  </button>
+                </div>
+              </form> */}
+            </div>
+            <div className="col-lg-6 col-sm-12 ">
+              <div className="links d-flex   justify-content-sm-end">
+                <div className="link">
+                  <Link to="/">Home</Link>
+                </div>
+                <div className="link">
+                  <Link to="about">About</Link>
+                </div>
+                <div className="link">
+                  <Link to="contact">Contact</Link>
                 </div>
               </div>
-            </nav>
+            </div>
           </div>
         </div>
       </div>

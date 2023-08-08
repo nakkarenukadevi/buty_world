@@ -4,14 +4,23 @@
   font-weight: 700;
   position: fixed;
   z-index: 2;
+  padding:10px;
+
 }
-li{
+.link a{
   display: block;
   color:aliceblue;
+  padding:10px;
+    text-decoration: none;
 }
-li:hover{
-  background-color: green;
+
+.links{
+  color:black;
+}
+.link a:hover{
+  background-color:whitesmoke;
   border-radius: 5px;
+  color:black;
 }
 .product_list{
   display: inline-table;
@@ -39,7 +48,7 @@ top:100px;
   height: 200px;
 
 }
-.about{
+.home{
   position: relative;
   
 }
@@ -52,12 +61,56 @@ top:100px;
 }
 .featured:hover{
  
-border: 5px solid green;
+border: 1px solid black;
  
 }
 .featured{
   width:250px;
 }
 .featured-div{
-  background-color: #abdbe3;
+  background-color:bisque;
+}
+.contact,.about{
+  position: relative;
+  top:100px;
+}
+.about-p{
+  height:800px;
+  background-color: #FDE5EC;
+}
+.footer{
+  color:white;
+  padding:20px;
+  position: fixed;
+    bottom: 0px;
+}
+
+.about-2{
+  background-color:darkgray;
+
+}
+.form_div{
+  display: flex;
+  justify-content: center;
+}
+.contact-div{
+
+  position: absolute;
+  top:30px;
+   
+}
+.contact-from{
+position: relative;
+top:10px;
+left:450px;
+height:500px;
+
+
+}
+.contact{   
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
 }

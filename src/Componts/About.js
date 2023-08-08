@@ -1,106 +1,96 @@
-import background_img from "../Componts/Images/background_img.jpg";
-import product_1 from "../Componts/Images/product-1.jpg";
-import product_2 from "../Componts/Images/product-2.jpg";
-import product_3 from "../Componts/Images/product-3.jpg";
-import product_4 from "../Componts/Images/product-4.jpg";
-import morning_powder from "../Componts/Images/morning_powder.jpg";
-
+import React from "react";
+import Footer from "../Footer";
 const About = () => {
   return (
     <>
-      <div className="container-fulid about">
-        <img src={background_img} />
+      <div className="container-fulid about-p">
         <div className="container">
-          <div className=" row heading text-center">
-            <div className="col-lg-12">
+          <div className="about row">
+            <h3 className="text-center">About Us</h3>
+            <div className="col-lg-6 col-sm-12">
+              <p>OUR STORY </p>
               <h3>
-                VU Natural | Your Gateway to 100% Organic Skincare for All Skin
-                Types
+                At VU Natural, we believe in the power of nature and the beauty
+                that lies within it.
               </h3>
+
+              <p>
+                Our brand was born from the passion and vision of Gissel Defex,
+                a remarkable woman who embodies the essence of being a mother, a
+                business owner, and a true advocate for embracing one's natural
+                self.
+              </p>
+              <p>
+                Gissel's journey began with a profound realization of the
+                harmful effects of synthetic chemicals and additives found in
+                everyday products. As a mother, she wanted to create a safe and
+                healthy environment for her family, starting with the products
+                they used. Determined to make a positive change, Gissel embarked
+                on a mission to develop a brand that would offer 100 percent
+                organic products, right down to the very bottle they come in.
+              </p>
+            </div>
+            <div className="col-lg-6 col-sm-12 ">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0750/6060/9328/files/WhatsApp_Image_2023-06-22_at_7.57.10_PM_1.jpg?width=560"
+                alt="about"
+              />
             </div>
           </div>
         </div>
       </div>
-      <div className="container-fulid featured-div">
-        <div className="container">
-          <div className="row text-center ">
-            <h1 className="my-3">FEATURED PRODUCTS</h1>
-
-            <div className=" col-sm-6 col-lg-3 featured ">
-              <img
-                src={product_1}
-                alt="..."
-                style={{ width: "250px", height: "300px" }}
-                className="my-2"
-              />
-              <div>
-                <h5 className="mt-2">Vu Natural</h5>
-                <h6 className="text-success">Moringa Elixir Face Serum</h6>
-                <p className="fw-bold">$ 39.99</p>
-              </div>
+      <div className="container-fluid about-2 ">
+        <div className="conatiner">
+          <div className="row py-4">
+            <div className="col-lg-6 col-sm-12 ">
+              <img src="https://cdn.shopify.com/s/files/1/0750/6060/9328/files/WhatsApp_Image_2023-06-22_at_7.58.20_PM.jpg?width=560" />
             </div>
-
-            <div className=" col-sm-6 col-lg-3 featured">
-              <img
-                src={product_2}
-                alt="..."
-                style={{ width: "250px", height: "300px" }}
-                className="my-2"
-              />
-              <div>
-                <h5 className="mt-2">Vu Natural</h5>
-                <h6 className="text-success">The Healing Face cream</h6>
-                <p className="fw-bold">$ 45.99</p>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-3 featured">
-              <img
-                src={product_3}
-                alt="..."
-                style={{ width: "250px", height: "300px" }}
-                className="my-2"
-              />
-              <div>
-                <h5 className="mt-2 ">Vu Natural</h5>
-                <h6 className="text-success">Iluminator Face Cream</h6>
-                <p className="fw-bold">$ 39.99</p>
-              </div>
-            </div>
-            <div className=" col-sm-6 col-lg-3 featured">
-              <img
-                src={product_4}
-                alt="..."
-                style={{ width: "250px", height: "300px" }}
-                className="my-2"
-              />
-              <div>
-                <h5 className="mt-2">Vu Natural</h5>
-                <h6 className="text-success">Magic Eye Contour Cream</h6>
-                <p className="fw-bold">$ 39.99</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="container-fluid">
-        <div className="container">
-          <div className="row my-3 ">
-            <div className="col-6">
-              <img src={morning_powder} style={{ width: "500px" }} />
-            </div>
-            <div className="col-6">
-              <h6>MORINGA POWDER </h6>
-              <p className="fs-5 ">
-                Experience the remarkable benefits of Moringa Powder in our skin
-                care products. Derived from the nutrient-rich Moringa tree, this
-                botanical treasure offers a multitude of advantages for your
-                skin.
+            <div className="col-lg-6 col-sm-12">
+              <h4> OUR PHILOSOPHY</h4>{" "}
+              <p>
+                Nature is the foundation of daily life. Driven by her unwavering
+                commitment to authenticity and sustainability, Gissel explored
+                the world of natural ingredients, seeking out the finest organic
+                elements that nature had to offer. She dedicated countless hours
+                researching and collaborating with experts in the field to
+                create formulas that would nourish and rejuvenate without
+                compromising on quality.
+              </p>
+              <p>
+                {" "}
+                Inspired by the boundless beauty found in nature, Gissel ensured
+                that every product at Vu Natural was meticulously crafted to
+                harness the incredible benefits of organic ingredients. From the
+                rich botanical extracts to the nurturing oils, each element was
+                thoughtfully selected to enhance the natural beauty that lies
+                within us all. But Gissel's passion for sustainability didn't
+                stop at the ingredients. She recognized the environmental impact
+                of packaging waste and made a groundbreaking decision to
+                revolutionize the industry.
+              </p>
+              <p>
+                Through tireless innovation, Gissel introduced the world to our
+                signature biodegradable bottles – a pioneering step towards a
+                more eco-friendly future. Each bottle embodies our commitment to
+                reducing plastic waste and protecting the planet for future
+                generations. Vu Natural is more than just a brand; it is a
+                celebration of individuality, self-love, and the beauty that
+                emerges when we embrace our natural selves.
+              </p>{" "}
+              <p>
+                Gissel's mission to provide products that empower and inspire
+                extends far beyond the physical realm. She aims to create a
+                community where individuals can connect, share their stories,
+                and support one another in their journey towards embracing their
+                true beauty.
               </p>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
+
 export default About;
